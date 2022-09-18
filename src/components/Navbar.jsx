@@ -1,6 +1,6 @@
 import React from 'react'
-
 import '../css/navb.css'
+import { Link } from 'react-router-dom'
 
 export default function Navbar() {
  
@@ -12,10 +12,10 @@ export default function Navbar() {
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <a class="navbar-brand" href="#/">Hidden brand</a>
+      <Link className="navbar-brand" to="/">Home</Link>
       <ul class="navbar-nav mx-auto mb-3 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#/">Home</a>
+          <Link class="nav-link active" aria-current="page" to="/AniFull">Animes</Link>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#/">Chapters</a>

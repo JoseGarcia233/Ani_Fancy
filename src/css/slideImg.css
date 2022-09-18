@@ -45,13 +45,14 @@
   padding: 6px;
   margin: 10px;
 }
-.btn{
+.btn1{
   border-radius: 50px;
   background-color: #fa0707;
   width: 92px;
   height: 45px;
   position: relative;
-  left: 160px;
+  right: 10px;
+  color: white;
   border-color: white;
 }
 
@@ -89,6 +90,7 @@
   66% {
     margin-left: -200%;
   }
+  
   100% {
     margin-left: -300%;
   }
@@ -130,8 +132,15 @@
 .btn2:hover {
   background-color: #B20600;
 }
-.btn:hover {
+.btn1:hover {
   background-color: #B20600;
+}
+
+.containerMain {
+  margin: 325px;
+  position: relative;
+  bottom: 310px;
+
 }
 
 

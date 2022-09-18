@@ -3,20 +3,21 @@ import Cards from './components/Cards';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ImgSlide from './components/ImgSlide';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+import ScrollToTop from "react-scroll-to-top";
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      <div  className="Container4">
-        <ImgSlide />
-      {/* <Cards/> */}
-      <div className="Container5"> 
-      <Footer/>
-      </div>
-      
-      </div>
-    
-      </div>
+      <Router>
+        <Navbar/>
+          <ScrollToTop />
+            <Routes>
+                  <Route path='/AniFull' element={<Cards/>}/>
+                    <Route path='/' element={<ImgSlide/>}/>
+            </Routes>
+        <Footer/>
+    </Router>
+ </div>
     
   
   );
